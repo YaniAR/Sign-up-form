@@ -104,9 +104,20 @@ input{
     border-radius: 4px;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #E5E7EB;
     overflow: hidden;
     width: 100%;
+}
+
+input:focus{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+input[type="password"]:user-invalid{
+    border: 1px solid red;
+    outline: none;
 }
 
 section:nth-of-type(3) {
@@ -137,6 +148,7 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
 
 @media (max-width: 765px) {
     .container{
